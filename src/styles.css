@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://use.typekit.net/zfq0hms.css");
+/* font-family: "parabolica-text", sans-serif;
+font-weight: 900;
+font-style: italic;
+
+
+font-family: "parabolica", sans-serif;
+font-weight: 400;
+font-style: normal;*/
+:root {
+  --background: #000000;
+  --white: #fff;
+  --text: #5f5e5e;
+  --accentRed: #cd422d;
+  --accentBlue: #88a3a9;
+  --accentBlueShade: #6C8287;
+  --accentPink: #efcaca;
+}
+
+* {
+  color: var(--text);
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background-color: var(--background);
+}
+
+.gambado {
+  font-family: "gambado-sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.figgins {
+  font-family: "figgins-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

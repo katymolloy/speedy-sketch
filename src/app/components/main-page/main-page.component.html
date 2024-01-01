@@ -1,0 +1,63 @@
+<div id="main-container">
+  <header>
+    <h1 class="gambado">SPEEDY SKETCH</h1>
+  </header>
+  <hr />
+  <div id="second-container ">
+    <form [formGroup]="refDetails" (ngSubmit)="handleSubmit()">
+      <h2 class="figgins">Know what you want to draw? Enter it below!</h2>
+      <input
+        type="text"
+        name="subject"
+        formControlName="subject"
+        placeholder="Enter any keyword or phrase here"
+      />
+
+      <h2 class="figgins">How long should each image be displayed?</h2>
+      <div class="radio-container">
+        <div class="radio-group">
+          <input
+            class="time-select"
+            formControlName="time"
+            type="radio"
+            id="30sec"
+            name="time"
+            value="30000"
+          />
+          <label for="30sec" class="figgins">30 seconds</label>
+        </div>
+
+        <div class="radio-group">
+          <input
+            class="time-select"
+            formControlName="time"
+            type="radio"
+            id="1min"
+            name="time"
+            value="60000"
+          />
+          <label for="1min" class="figgins">1 minute</label>
+        </div>
+
+        <div class="radio-group">
+          <input
+            class="time-select"
+            formControlName="time"
+            type="radio"
+            id="5min"
+            name="time"
+            value="300000"
+          />
+          <label for="5min" class="figgins">5 minutes</label>
+        </div>
+      </div>
+      <button
+        type="submit"
+        [disabled]="refDetails.invalid"
+        class="gambado submit-button"
+      >
+        START DRAWING!
+      </button>
+    </form>
+  </div>
+</div>

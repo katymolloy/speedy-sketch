@@ -1,0 +1,19 @@
+<div id="main-container">
+  <div class="button-container">
+  <span class="material-symbols-outlined home-arrow" routerLink="/">
+    arrow_back
+    </span>
+  
+      <button type="button" class="direction figgins" (click)="backHandler()" >LAST</button>
+      <button type="button" class="direction figgins" (click)="nextHandler()">NEXT</button>
+      <button type="button" class="direction figgins" (click)="pauseHandler()">PAUSE</button>
+      <button type="button" class="direction figgins" (click)="pauseHandler()">CONTINUE</button>
+
+
+  </div>
+  <div class="image-here">
+    <img src="{{currentImage}}" />
+  </div>
+
+
+</div>
